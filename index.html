@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Creative Studio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        /* Minimal custom inline styles for things Bootstrap utilities can't perfectly cover without custom CSS files */
+        /* We keep this strictly minimal as requested */
+        .hero-gradient-text {
+            background: linear-gradient(45deg, #0d6efd, #0dcaf0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- Navbar -->
+    <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black fixed-top border-bottom border-light border-opacity-10 py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">
+                <i class="bi bi-prism-fill text-primary me-2"></i>ArtStudio
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+                <div class="ms-lg-4">
+                    <a href="#contact" class="btn btn-primary rounded-pill px-4 fw-bold">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-vh-100 d-flex align-items-center position-relative overflow-hidden pt-5">
+        <!-- Background Gradient Orb -->
+        <div class="position-absolute top-50 start-50 translate-middle rounded-circle bg-primary bg-gradient opacity-25 blur-3xl"
+            style="width: 600px; height: 600px; filter: blur(100px); z-index: -1;"></div>
+
+        <div class="container text-center pt-5">
+            <span
+                class="badge bg-dark border border-secondary text-uppercase letter-spacing-1 mb-4 px-3 py-2 rounded-pill">
+                <i class="bi bi-stars text-warn me-2"></i>v2.0 Now Available
+            </span>
+            <h1 class="display-1 fw-bold mb-4 tracking-tighter">
+                Create Digital <br />
+                <span class="hero-gradient-text">Masterpieces</span>
+            </h1>
+            <p class="lead text-secondary mb-5 mx-auto" style="max-width: 600px;">
+                Unleash your creativity with our next-gen tools designed for modern creators. Intuitive, powerful, and
+                built for speed.
+            </p>
+            <div class="d-flex justify-content-center gap-3 mb-5">
+                <a href="#" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-lg fw-bold">Start Building</a>
+                <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 fw-bold">View Demo</a>
+            </div>
+
+            <!-- Dashboard Preview -->
+            <div class="position-relative mx-auto mt-5" style="max-width: 900px;">
+                <div class="card bg-dark border-secondary shadow-lg rounded-4 overflow-hidden border border-opacity-25">
+                    <div class="card-header bg-dark border-bottom border-secondary d-flex gap-2 p-3">
+                        <div class="rounded-circle bg-danger p-1" style="width:12px; height:12px;"></div>
+                        <div class="rounded-circle bg-warning p-1" style="width:12px; height:12px;"></div>
+                        <div class="rounded-circle bg-success p-1" style="width:12px; height:12px;"></div>
+                    </div>
+                    <div class="card-body bg-black bg-opacity-50 p-0 overflow-hidden" style="height: 450px;">
+                        <div class="d-flex h-100">
+                            <!-- Sidebar Mockup -->
+                            <div class="border-end border-secondary border-opacity-25 p-3 d-none d-md-block"
+                                style="width: 240px; background: rgba(255,255,255,0.02);">
+                                <div class="d-flex align-items-center mb-4 px-2">
+                                    <div class="bg-primary rounded-circle me-2" style="width: 24px; height: 24px;">
+                                    </div>
+                                    <div class="h6 mb-0 text-white small fw-bold">Workspace</div>
+                                </div>
+                                <div class="vstack gap-3">
+                                    <div
+                                        class="p-2 bg-primary bg-opacity-25 text-primary rounded-3 small fw-bold d-flex align-items-center">
+                                        <i class="bi bi-grid-fill me-2"></i> Dashboard
+                                    </div>
+                                    <div class="p-2 text-secondary rounded-3 small d-flex align-items-center">
+                                        <i class="bi bi-folder me-2"></i> Projects
+                                    </div>
+                                    <div class="p-2 text-secondary rounded-3 small d-flex align-items-center">
+                                        <i class="bi bi-people me-2"></i> Team
+                                    </div>
+                                    <div class="p-2 text-secondary rounded-3 small d-flex align-items-center">
+                                        <i class="bi bi-graph-up me-2"></i> Analytics
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-5">
+                                    <div class="p-3 rounded-3 bg-dark border border-secondary border-opacity-25 mt-5">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="bg-success rounded-circle" style="width: 8px; height: 8px;">
+                                            </div>
+                                            <span class="ms-2 small text-muted">System Status</span>
+                                        </div>
+                                        <div class="h6 mb-0 text-white small">All systems operational</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Main Content Mockup -->
+                            <div class="flex-grow-1 p-4">
+                                <!-- Top Bar -->
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div>
+                                        <h5 class="text-white fw-bold mb-1">Overview</h5>
+                                        <small class="text-secondary">Welcome back, creative director</small>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <div class="bg-dark border border-secondary border-opacity-25 text-secondary p-2 rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 32px; height: 32px;">
+                                            <i class="bi bi-search small"></i>
+                                        </div>
+                                        <div class="bg-dark border border-secondary border-opacity-25 text-secondary p-2 rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 32px; height: 32px;">
+                                            <i class="bi bi-bell small"></i>
+                                        </div>
+                                        <div class="bg-gradient bg-primary rounded-circle"
+                                            style="width: 32px; height: 32px;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Stats Grid -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-4">
+                                        <div
+                                            class="p-3 rounded-4 bg-dark border border-secondary border-opacity-25 h-100">
+                                            <small class="text-secondary d-block mb-1">Total Views</small>
+                                            <div class="h4 text-white fw-bold mb-0">84.2k</div>
+                                            <small class="text-success" style="font-size: 0.75rem;"><i
+                                                    class="bi bi-arrow-up-short"></i> 12%</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div
+                                            class="p-3 rounded-4 bg-dark border border-secondary border-opacity-25 h-100">
+                                            <small class="text-secondary d-block mb-1">Active Projects</small>
+                                            <div class="h4 text-white fw-bold mb-0">24</div>
+                                            <small class="text-warning" style="font-size: 0.75rem;"><i
+                                                    class="bi bi-dash"></i> 0%</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div
+                                            class="p-3 rounded-4 bg-dark border border-secondary border-opacity-25 h-100">
+                                            <small class="text-secondary d-block mb-1">Earnings</small>
+                                            <div class="h4 text-white fw-bold mb-0">$12k</div>
+                                            <small class="text-success" style="font-size: 0.75rem;"><i
+                                                    class="bi bi-arrow-up-short"></i> 8%</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Chart Area Mockup -->
+                                <div
+                                    class="p-3 rounded-4 bg-dark border border-secondary border-opacity-25 overflow-hidden position-relative">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <small class="text-secondary">Traffic Analytics</small>
+                                        <small class="text-primary">Last 7 Days</small>
+                                    </div>
+                                    <div class="d-flex align-items-end gap-2" style="height: 100px;">
+                                        <!-- Chart Bars -->
+                                        <div class="w-100 bg-primary bg-opacity-10 rounded-top" style="height: 40%;">
+                                        </div>
+                                        <div class="w-100 bg-primary bg-opacity-25 rounded-top" style="height: 60%;">
+                                        </div>
+                                        <div class="w-100 bg-primary bg-opacity-50 rounded-top" style="height: 35%;">
+                                        </div>
+                                        <div class="w-100 bg-primary bg-opacity-75 rounded-top" style="height: 85%;">
+                                        </div>
+                                        <div class="w-100 bg-primary rounded-top" style="height: 55%;"></div>
+                                        <div class="w-100 bg-primary bg-opacity-50 rounded-top" style="height: 70%;">
+                                        </div>
+                                        <div class="w-100 bg-primary bg-opacity-25 rounded-top" style="height: 45%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-dark">
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center text-center py-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3">Designed for <span class="text-primary">Impact</span></h2>
+                    <p class="text-secondary fs-5">Every pixel carefully crafted to ensure the best possible experience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-black h-100 border-secondary border-opacity-25 rounded-4 p-4 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex p-3 mb-4">
+                                <i class="bi bi-lightning-charge-fill text-primary fs-3"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Lightning Fast</h3>
+                            <p class="text-secondary mb-0">Optimized for speed and performance to ensure your workflow
+                                never misses a beat.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-black h-100 border-secondary border-opacity-25 rounded-4 p-4 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="bg-info bg-opacity-10 rounded-3 d-inline-flex p-3 mb-4">
+                                <i class="bi bi-palette-fill text-info fs-3"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Modern Palette</h3>
+                            <p class="text-secondary mb-0">Crafted with the latest design trends using Bootstrap 5's
+                                vibrant color system.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-black h-100 border-secondary border-opacity-25 rounded-4 p-4 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex p-3 mb-4">
+                                <i class="bi bi-shield-check-fill text-success fs-3"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Secure Core</h3>
+                            <p class="text-secondary mb-0">Built with security in mind, providing a safe environment for
+                                your digital assets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-5 border-top border-secondary border-opacity-25">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold fs-4 text-white" href="#">
+                        <i class="bi bi-prism-fill text-primary me-2"></i>ArtStudio
+                    </a>
+                    <p class="text-secondary mt-3">Empowering creators with tools to build the future.</p>
+                </div>
+                <div class="col-6 col-lg-2 ms-auto">
+                    <h5 class="fw-bold mb-3 h6 text-uppercase text-light">Product</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Features</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Pricing</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Integrations</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Documentation</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">API Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="fw-bold mb-3 h6 text-uppercase text-light">Company</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Press Kit</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="d-flex justify-content-between align-items-center mt-5 pt-4 border-top border-secondary border-opacity-10">
+                <span class="text-secondary small">&copy; 2026 ArtStudio.</span>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-secondary"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
